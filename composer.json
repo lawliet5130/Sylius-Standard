@@ -19,8 +19,8 @@
     "require": {
         "php": "^7.3",
         "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
-        "sylius/paypal-plugin": "^1.1",
-        "sylius/sylius": "~1.9.0",
+        "bodnar1212/paypal-plugin": "2.0.2",
+        "bagrinsergiu/sylius": "2.0.0",
         "symfony/dotenv": "^4.4 || ^5.2",
         "symfony/flex": "^1.11"
     },
@@ -96,5 +96,15 @@
         "branch-alias": {
             "dev-master": "1.9-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bagrinsergiu/sylius.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bodnar1212/PayPalPlugin.git"
+        }
+    ]
 }
